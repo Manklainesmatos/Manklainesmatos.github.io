@@ -1,0 +1,608 @@
+@import url('font/stylesheet.css');
+@import url('fontawesome-free-6.1.1-web/css/all.min.css');
+
+:root{
+    --color1:rgba(44, 143, 118, 0.781);
+    --color2:#232525;
+    --color3:#174646;
+    --color4:rgba(56, 189, 155, 0.932);
+    --color-blanco:#FFFFFF;
+    --color-negro:#000000;
+    --color-gris-claro:#cccccc;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    background-color: #174646;
+    color: var(--color-gris-oscuro);
+    margin: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+h1{
+    color: var(--color-blanco);
+    font-size: 30px;
+    font-family: 'lexendbold';
+    letter-spacing: 10px;
+    font-weight: 50px;
+    padding-left: 10px;
+    padding-bottom: -10px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: 'lexendbold';
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'lexendbold';;
+    letter-spacing: 5px;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'lexendbold';
+    letter-spacing: 10px;
+}
+
+p{
+    color: #cccccc;
+    font-family: 'lexendbold';
+}
+
+a{
+    font-family: 'lexendbold';
+}
+
+#page-header{
+    background-color: #232525;
+    color: #cccccc;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#top-nav{
+    background-color: #232525;
+    font-size: 0.85em;
+}
+
+#top-nav li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 1s;
+}
+
+#top-nav li :hover{
+    color: rgba(56, 189, 155, 0.932);;
+    text-decoration: none;
+}
+
+#opciones{
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+#menu{
+    list-style: none;;
+    display: flex;
+}
+
+#menu li a{
+    font-size: 20px;
+    display: block;
+}
+
+#name{
+    display: flex;
+    justify-content: space-between;
+    background-position: center;
+    background-color: rgba(44, 143, 118, 0.781);
+}
+
+#joyas{
+    background-color: #232525;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#funcion{
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#funcion h2{
+    font-size: 50px;
+    color: #000000;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+#funcion p{
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 30px;
+    text-align:left;
+}
+
+#metodos h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+#metodos img{
+    box-shadow: 5px 5px var(--color-blanco);
+}
+
+#main-footer{
+    background-color: #232525;
+    color:var(--color-blanco);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+#ir-arriba{font-size: 20px;
+    background-color: rgba(44, 143, 118, 0.781);
+    color: var(--color-blanco);
+    padding: 15px 21px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 10%;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0,0.3);
+}
+
+#ir-arriba:hover{
+    box-shadow: 0 5px 20px rgba(0, 0, 0,0.5);
+    transform: translateY(-10px);
+}
+
+#facebook a i{
+    color: #FFFFFF;
+    transition: .5s all ease-in-out;
+}
+
+#facebook a i:hover{
+    color: rgba(56, 189, 155, 0.932);
+}
+
+#facebook a p{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+#facebook a p:hover{
+    color: rgba(56, 189, 155, 0.932);
+    text-decoration: none;
+}
+
+#gmail a i{
+    color: #FFFFFF;
+    transition: .5s all ease-in-out;
+}
+
+#gmail a i:hover{
+    color: rgba(56, 189, 155, 0.932);
+}
+
+#gmail a p{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+#gmail a p:hover{
+    color: rgba(56, 189, 155, 0.932);
+    text-decoration: none;
+}
+
+#twitter a i{
+    color: #FFFFFF;
+    transition: .5s all ease-in-out;
+}
+
+#twitter a i:hover{
+    color: rgba(56, 189, 155, 0.932);
+}
+
+#twitter a p{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+#twitter a p:hover{
+    color: rgba(56, 189, 155, 0.932);
+    text-decoration: none;
+}
+
+#whatsapp a i{
+    color: #ffffff;
+    transition: .5s all ease-in-out;
+}
+
+#whatsapp a i:hover{
+    color: rgba(56, 189, 155, 0.932);
+}
+
+#whatsapp a p{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+#whatsapp a p:hover{
+    color: rgba(56, 189, 155, 0.932);
+    text-decoration: none;
+}
+
+#instagram a i{
+    color: #ffffff;
+    transition: .5s all ease-in-out;
+}
+
+#instagram a i:hover{
+    color: #ceb902;
+}
+
+#instagram a p{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+#instagram a p:hover{
+    color: #c9bd51;
+    text-decoration: none;
+}
+
+/* servicios */
+
+#joyeria a {
+    text-decoration: none;
+}
+
+#videos{
+    background-color: #FFFFFF;
+    color: #232525;
+}
+
+#videos h2{
+    color: #232525;
+}
+
+
+.texto-columnas{
+    column-count:4;
+    column-gap: 30px;
+    column-rule: dashed 2px #232525 ;
+}
+
+.boton-vinculo{
+    color: var(--color-blanco);
+    padding-top: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'neon_80sregular';
+}
+
+.boton-vinculo:hover{
+    font-family: 'neon_80sregular';
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a {
+    padding: 20px 10px;
+    margin-right:10px;
+}
+
+.img-fluid{
+    max-width:100%;
+    height: 350px;
+    width: 350px;
+}
+
+.img-fluid2{
+    max-width:100%;
+    height: 500px;
+    width: 500px;
+}
+
+.img-fluid3{
+    max-width:100%;
+    height: 415px;
+    width: 415px;
+}
+
+
+.img-contenedor{
+    position: relative;
+}
+
+.img-descripcion1{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(59, 143, 118, 0), #326d56cc);
+    color:var(--color-blanco);
+    top: 0;
+    height: 100%;
+    width: calc(100% - 40px);
+    padding-top: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .7s all ease-in-out;
+    justify-content: flex-end;
+    font-family: 'neon_80sregular';
+}
+
+.img-descripcion1:hover{
+    opacity: 1;
+}
+
+.img-descripcion2{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(32, 29, 63, 0), #326d56cc);
+    color:var(--color-blanco);
+    top: 0;
+    height: 100%;
+    width: calc(100% - 40px);
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .7s all ease-in-out;
+    justify-content: flex-end;
+    font-family: 'neon_80sregular';
+}
+
+.img-descripcion2:hover{
+    opacity: 1;
+}
+
+.img-descripcion3{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(32, 29, 63, 0), #326d56cc);
+    color:var(--color-blanco);
+    top: 0;
+    height: 100%;
+    width: calc(100% - 40px);
+    padding-top: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .7s all ease-in-out;
+    justify-content: flex-end;
+    font-family: 'neon_80sregular';
+}
+
+.img-descripcion3:hover{
+    opacity: 1;
+}
+
+.img-descripcion4{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(32, 29, 63, 0), #326d56cc);
+    color:var(--color-blanco);
+    top: 0;
+    height: 100%;
+    width: calc(100% - 90px);
+    padding-top: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .7s all ease-in-out;
+    justify-content: flex-end;
+    font-family: 'neon_80sregular';
+}
+
+.img-descripcion4:hover{
+    opacity: 1;
+}
+
+.img-descripcion5{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(32, 29, 63, 0), #326d56cc);
+    color:var(--color-blanco);
+    top: 0;
+    height: 100%;
+    width: calc(100% - 40px);
+    padding-top: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .7s all ease-in-out;
+    justify-content: flex-end;
+    font-family: 'neon_80sregular';
+}
+
+.img-descripcion5:hover{
+    opacity: 1;
+}
+
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex; 
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row2{
+    display: column; 
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 30px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.padded{
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+
+.padded2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+}
+
+.padded3{
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+.padded4{
+    padding-top: 17px;;
+    padding-bottom: 21px;
+    padding-right: 51px;
+}
+
+.padded5{
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.padded6{
+    padding-left: 57px;
+}
+
+.padded7{
+    padding-left:18px;
+}
+
+.padded8{
+    padding-left:9px;
+}
+
+.padded9{
+    padding-left:10px;
+}
+
+.padded10{
+    padding-left:23px;
+}
+
+.padded11{
+    padding-left:20px;
+}
+
+.padded12{
+    padding-right: 50px;
+    padding-left: 400px;
+}
+
+.padded13{
+    padding-left: 200px;
+}
+
+.padded14{
+    padding-right:30px;
+    padding-left: 15px;
+}
+
+.paddedup{
+    padding-bottom: 0px;
+    transition: .5s all ease-in-out;
+}
+
+.paddedup:hover{
+    padding-bottom: 100px;
+}
+
+.video-responsive{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+}
+
+/*Formulario*/
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-control{
+    padding: 15px;
+    width: 100%;
+    font: inherit;
+    border: solid 4px rgba(56, 189, 155, 0.932);
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+}
+
+.form-control:hover{
+    padding: 15px;
+    width: 100%;
+    font: inherit;
+    border: solid 4px #232525;
+    box-sizing: border-box;
+}
+
+.btn-form{
+    background-color: #232525;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    font: inherit;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-form:hover{
+    background-color: rgba(56, 189, 155, 0.932);
+    color: #FFFFFF;
+    padding: 10px 10px;
+    font: inherit;
+    border: none;
+}
+
+.mapa-responsive{
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+}
